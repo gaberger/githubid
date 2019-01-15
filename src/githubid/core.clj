@@ -27,8 +27,7 @@
         (println (str/join result))))))
 
 (defn -main [& args]
-  (System/setProperty "java.library.path"
-                      (str (System/getenv "GRAALVM_HOME") "/jre/lib/amd64"))
+  (System/setProperty "java.library.path" (str/join ":" [(System/getProperty "user.dir") (System/getenv "PATH")]))
   (if (< (count args) 1)
     (print-error-and-exit "Usage: githubid <github-id>")
     (get-github-keys (first args))))
