@@ -14,5 +14,7 @@
 ```./githubid <githubid>```
 
 
+### Dependencies
 
+The SSL implementation in Java is dependant on a native library 'libsunec.so'. It must be in the calling directory or somewhere in the PATH 
 
