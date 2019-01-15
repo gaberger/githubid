@@ -1,10 +1,18 @@
+# Demonstration of building natively compiled command line tools with Clojure and GRAAL_VM 
+
+
+## Build Clojure/GRAAL Docker Image
+
+```docker build --rm -t clj-graal:1.10 .```
+
+## Run build step
+
+```build.sh```
+
+## Run compiled executable
+
+```./githubid <githubid>```
 
 
 
-## Dependencies
 
-Set GRAALVM_HOME
-```export GRAALVM_HOME=/home/gary/working/graalvm-ce-1.0.0-rc9```
-
-set JAVA_HOME
-```export JAVA_HOME=/home/gary/working/graalvm-ce-1.0.0-rc9```
