@@ -6,10 +6,11 @@ version: 2
 jobs:
   build:
     docker:
-     - image: "clojure:tools-deps"
+     - image: "gaberger/clj-graal:1.10"
       
     working_directory: ~/repo
 
     steps:
       - checkout
       - run: clojure -A:test
+      - run: clojure -A:native-image
