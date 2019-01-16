@@ -18,8 +18,7 @@ or
 
 ## Do it manually
 
-```docker run --rm -it -v `pwd`:/<dirname> -v ~/.m2:/root/.m2 -v ~/.gitlibs:/root/.gitlibs  -w=/<dirname> -e GRAALVM_HOME=/opt/graalvm-ce-1.0.0-rc10  <clj-graal:1.10> clojure -A:native-imag
-e```
+```docker run --rm -it -v `pwd`:/<dirname> -v ~/.m2:/root/.m2 -v ~/.gitlibs:/root/.gitlibs  -w=/<dirname> -e GRAALVM_HOME=/opt/graalvm-ce-1.0.0-rc10  <clj-graal:1.10> clojure -A:native-image```
 
 ## Run compiled executable
 
